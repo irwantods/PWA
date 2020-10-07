@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Indie Flower";
+    src: url('/css/IndieFlower-Regular.ttf');
+}
+
+.h1 {
+    font-family: 'Indie Flower', cursive;
+}
+
+.parallax-container {
+    width: 100%;
+}
