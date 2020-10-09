@@ -51,6 +51,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 var content = document.querySelector("#body-content");
                 if (this.status == 200) {
                     content.innerHTML = xhttp.responseText;
+                    //modal
+                    if (page === 'contact') {
+                        var elems = document.querySelectorAll('.modal');
+                        M.Modal.init(elems);
+                    }
                     // parallax
                     if (page === 'home', 'gallery') {
                         var elems = document.querySelectorAll('.parallax');

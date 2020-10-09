@@ -1,10 +1,10 @@
-@font-face {
-    font-family: "Indie Flower";
-    src: url('/css/IndieFlower-Regular.ttf');
-}
+/* @font-face {
+    font-family: "Patrick Hand";
+    src: url('/css/PatrickHand-Regular.ttf');
+} */
 
-.h1 {
-    font-family: 'Indie Flower', cursive;
+main {
+    font-family: 'Patrick Hand', cursive;
 }
 
 .parallax-container {
