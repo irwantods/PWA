@@ -7,14 +7,13 @@
     <meta name="description" content="Our Wedding" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Wedding</title>
-
     <!-- load komponen css dan javascript -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="stylesheet" href="/css/PatrickHand-Regular.ttf">
     <link rel="stylesheet" href="/css/materialize.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#820089" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="icon" type="icon" href="/image/icon_128.ico" />
     <link rel="apple-touch-icon" href="/image/icon_128.ico" />
 
@@ -22,10 +21,10 @@
 
 <main>
     <!-- Navigasi -->
-    <nav class="teal white" role="navigation">
+    <nav class="teal white navbar-fixed" role="navigation">
         <div class="nav-wrapper">
             <a id="logo-container" href="#" class="brand-logo">
-                <object id="front-page-logo" type="image/png" data="/image/wedding_logo.png"> </object>
+                <object id="front-page-logo" type="image/png" data="./image/wedding_logo.png"> </object>
             </a>
             <a href="#" class="sidenav-trigger black-text" data-target="nav-mobile">☰</a>
             <ul class="topnav right hide-on-med-and-down"></ul>
@@ -37,24 +36,7 @@
     <div id="body-content"></div>
     <script src="js/materialize.min.js"></script>
     <script src="js/nav.js"></script>
-
-    <script>
-        // Mendaftarkan service worker
-        if ("serviceWorker" in navigator) {
-            window.addEventListener("load", function() {
-                navigator.serviceWorker
-                    .register("/service-worker.js")
-                    .then(function() {
-                        console.log("Pendaftaran ServiceWorker Berhasil.");
-                    })
-                    .catch(function() {
-                        console.log("Pendaftaram ServiceWorker Gagal.");
-                    });
-            });
-        } else {
-            console.log("Browser Belum Mendukung Fitur ServiceWorker");
-        }
-    </script>
+    <script src="js/sw-register.js"></script>
 
 </main>
 
